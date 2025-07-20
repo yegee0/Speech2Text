@@ -1,0 +1,19 @@
+train: [] # metrics that are calculated during training
+
+inference: # metrics that are calculated during inference (eval)
+  - _target_: src.metrics.ArgmaxCERMetric
+    name: "CER_(Argmax)" # it is better to avoid spaces in names
+  - _target_: src.metrics.ArgmaxWERMetric
+    name: "WER_(Argmax)"
+  - _target_: src.metrics.BeamCERMetric
+    name: "CER_(BeamSearch)" # it is better to avoid spaces in names
+    beam_size: 5
+  - _target_: src.metrics.BeamWERMetric
+    name: "WER_(BeamSearch)"
+    beam_size: 5
+  - _target_: src.metrics.LMBeamCERMetric
+    name: "CER_(LM_BeamSearch)" # it is better to avoid spaces in names
+    beam_size: 100
+  - _target_: src.metrics.LMBeamWERMetric
+    name: "WER_(LM_BeamSearch)"
+    beam_size: 100

@@ -1,0 +1,4 @@
+test:
+  _target_: src.datasets.LibrispeechDatasetKaggle
+  part: "test-other"
+  instance_transforms: ${transforms.instance_transforms.inference}

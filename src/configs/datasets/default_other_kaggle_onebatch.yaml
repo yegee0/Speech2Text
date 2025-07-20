@@ -1,0 +1,15 @@
+train:
+  _target_: src.datasets.LibrispeechDatasetKaggle
+  part: "train-other-500"
+  max_audio_length: 20.0
+  max_text_length: 200
+  limit: 100
+  instance_transforms: ${transforms.instance_transforms.train}
+
+val:
+  _target_: src.datasets.LibrispeechDatasetKaggle
+  part: "dev-other"
+  max_audio_length: 20.0
+  max_text_length: 200
+  limit: 100
+  instance_transforms: ${transforms.instance_transforms.inference}
