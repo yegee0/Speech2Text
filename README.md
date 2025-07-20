@@ -21,10 +21,6 @@ This repository demonstrates how to run inference using the DeepSpeech2 model (A
 # Clone your Speech2Text project
 git clone https://github.com/yegee0/Speech2Text.git
 cd Speech2Text
-
-# Pull in the DeepSpeech2 codebase
-git clone https://github.com/aapetukhov/ASR-DeepSpeech2.git
-cd ASR-DeepSpeech2
 git checkout lm_beam_search
 ```
 
