@@ -35,16 +35,16 @@ pip install gdown
 
 ```bash
 # Clean acoustic model
-gdown 1XpAuRCg8phPTJxmzPyvrAUpc02ZgQC0O
+gdown 1NHkGDwOUmSyGqO4zHpbLEOAxokygw6m2
 
 # Alternative acoustic model
-gdown 197CiNFeESxA6Mo6S5tv-hV8xF528WUrm
+gdown 1H_tc1sCFfDFFaElu09DuvXi8aaYnGZif
 
 # Pre‑trained language model
-gdown 1hqkXgR-OENH3uoILTInHCNKbmQFm-5wr
+gdown 1-hy2wFlaSU46XhpgEVc0E8lIBcHdOQVq
 
 # Lexicon (pronunciation dictionary)
-gdown 1HhqKQgOE4O-mnTbTm9s1JHMFZQTGpyyf
+gdown 1ggUebF7z-k5Fz7mjUWq6NHilV3eHiSb7
 ```
 
 ### 4. Prepare your audio & transcripts
